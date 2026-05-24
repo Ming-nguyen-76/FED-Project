@@ -9,3 +9,59 @@ img {
   display: block;
 }
 
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("/asset/image/background.png");
+  background-size: cover;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+footer {
+  background-color: #244533;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 18px;
+}
+
+.navbar {
+  background: #244533;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  padding: 16px 50px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.navbar > a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 12px;
+}
+
+.navbar > a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  background-image: url(/asset/image/background_header.png);
+  background-size: cover;
+  color: white;
+  padding: 30px;
+  font-size: 38px;
+}

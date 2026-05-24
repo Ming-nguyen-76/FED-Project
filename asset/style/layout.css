@@ -1,75 +1,15 @@
-
-body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("/asset/image/background.png");
-  background-size: cover;
-  background-position: center;
-}
-
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 60px;
-}
-
-footer {
-  background-color: #244533;
-  color: white;
-  text-align: center;
-  padding: 18px;
-  font-size: 18px;
-}
-
-.navbar {
-  background: #244533;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  padding: 16px 50px;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: 700;
-  flex: 1;
-}
-
-.navbar > a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px 12px;
-}
-
-.navbar > a:hover {
-  text-decoration: underline;
-}
-
-.header {
-  background-image: url(/asset/image/background_header.png);
-  background-size: cover;
-  color: white;
-  padding: 30px;
-  font-size: 38px;
-}
-
-
-
+/* For Home Page */
 .layout-content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
   align-items: center;
-  margin: 0 20px;
+  margin: 20px;
 }
 
 .first-sub-header,
 .sub-header {
-  font-size: clamp(24px, 3vw, 32px);
+  font-size: 32px;
   margin-left: 20px;
   margin-bottom: 14px;
   color: #163825;
@@ -118,7 +58,7 @@ ol > li {
   padding-bottom: 24px;
 }
 
-
+/* For About Me */
 .about-content {
   display: grid;
   grid-column: 3/11;
@@ -130,7 +70,7 @@ ol > li {
 }
 
 
-
+/* For Personal Action */
 .personal-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
