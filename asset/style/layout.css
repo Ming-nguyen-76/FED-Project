@@ -1,39 +1,48 @@
-/* Default Layout for all pages */
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: url("/asset/image/background.png");
   background-size: cover;
   background-position: center;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
 
 footer {
   background-color: #244533;
   color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 20px;
+  padding: 18px;
+  font-size: 18px;
 }
 
 .navbar {
-  background-color: #244533;
+  background: #244533;
   color: white;
   display: flex;
   align-items: center;
-  padding: 15px 45px;
+  gap: 26px;
+  padding: 16px 50px;
 }
 
 .title {
   font-size: 30px;
-  font-weight: bold;
-  flex: 1; /* keep the navigation at the left side of the nav bar */
+  font-weight: 700;
+  flex: 1;
 }
 
 .navbar > a {
   color: white;
   text-decoration: none;
-  margin-left: 90px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 12px;
 }
 
 .navbar > a:hover {
@@ -44,131 +53,128 @@ footer {
   background-image: url(/asset/image/background_header.png);
   background-size: cover;
   color: white;
-  padding: 25px 30px;
-  font-size: 28px;
-  font-weight: bold;
+  padding: 30px;
+  font-size: 38px;
 }
 
-.heading-image {
-  background-color: white;
-}
 
-.heading-image img {
-  width: 900px;
-  display: block;
-  margin: auto;
-}
 
-/* For Home and About Me */
 .layout-content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat();
+  gap: 24px;
+  align-items: center;
+  margin: 0 20px;
 }
 
-/* For Home Page */
+.first-sub-header,
+.sub-header {
+  font-size: clamp(24px, 3vw, 32px);
+  margin-left: 20px;
+  margin-bottom: 14px;
+  color: #163825;
+}
+
 .first-sub-header {
-  font-size: 28px;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 56px;
 }
 
 .sub-header {
-  font-size: 28px;
-  margin-top: 50px;
-  margin-left: 100px;
-  margin-bottom: 10px;
+  margin-top: 42px;
+}
+
+.content,
+ol {
+  grid-column: 1 / 8;
+  border-radius: 18px;
+  background: #9bd0ef;
+  padding: 24px;
+  width: auto;
 }
 
 .content {
-  display: grid;
-  grid-column: 2/4;
-  border-radius: 30px;
-  background-color: #9bd0ef;
-  padding: 25px;
-  width: 600px;
-  font-size: 26px;
+  font-size: 23px;
 }
 
 ol {
-  display: grid;
-  grid-column: 2/4;
-  background-color: #9bd0ef;
-  border-radius: 30px;
-  padding-left: 40px;
-  width: 600px;
+  padding-left: 32px;
 }
 
 ol > li {
-  padding: 20px;
-  font-size: 26px;
+  padding: 8px;
+  font-size: 23px;
 }
 
 .representation {
-  display: grid;
-  width: 500px;
-  height: 280px;
-  margin: auto;
-  grid-column: 6/12;
-  grid-row: 1/3;
+  grid-column: 8 / 13;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 18px;
+  justify-self: center;
 }
 
 #last-section {
-  padding-bottom: 50px;
+  padding-bottom: 24px;
 }
 
 
-/* For About Me */
 .about-content {
   display: grid;
-  grid-column: 4/10;
-  border-radius: 30px;
-  background-color:rgba(255, 255, 255, 0.75);
-  padding: 25px;
-  font-size: 26px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  grid-column: 3/11;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  font-size: 25px;
+  margin: 60px 0;
 }
 
 
-/* For Personal Experience */
 
 .personal-section {
-    display: grid;
-    grid-template-columns: repeat(20,1fr);
-    grid-template-rows: repeat(3,1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin: 40px 20px;
+  align-items: start;
 }
 
-.personal-content:nth-child(1) {
-    display: grid;
-    grid-column: 2/7;
-}
-
-.personal-content:nth-child(2) {
-    display: grid;
-    grid-column: 8/13;
-}
-
-.personal-content:nth-child(3) {
-    display: grid;
-    grid-column: 14/19;
+.personal-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .personal-representation {
-    width: 456px;
-    height: 346px;
-    margin-top: 50px;
-    margin-bottom: 40px;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 18px;
 }
 
 .personal-header {
-    display: grid;
+  min-height: 42px;
+  margin-bottom: 12px;
+  font-size: 28px;
 }
 
 .main-info {
-  display: grid;
-  border-radius: 30px;
+  border-radius: 20px;
   background-color: #9bd0ef;
-  padding: 25px;
-  font-size: 26px;
+  padding: 22px;
+  font-size: 22px;
+}
+
+
+ul {
+  border-radius: 20px;
+  background-color: #9bd0ef;
+  padding: 22px;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+li {
+  margin-bottom: 12px;
 }
