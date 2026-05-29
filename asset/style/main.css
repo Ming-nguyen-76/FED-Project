@@ -1,67 +1,119 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
 body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url("/asset/image/background.png");
-  background-size: cover;
-  background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/asset/image/background.png);
+    background-size: cover;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 60px;
+
+.site-header {
+    background-color: #47ae75
 }
 
-footer {
-  background-color: #244533;
-  color: white;
-  text-align: center;
-  padding: 18px;
-  font-size: 18px;
+.topic {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
 }
 
-.navbar {
-  background: #244533;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  padding: 16px 50px;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: 700;
-  flex: 1;
+a {
+    text-decoration: none;
 }
 
 .navbar > a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px 12px;
+    color: white;
+    font-weight: 700;
 }
 
-.navbar > a:hover {
-  text-decoration: underline;
+.navbar a:hover, .navbar .active {
+    background: #1f6b4e;
+    color: #ffffff;
 }
 
-.header {
-  background-image: url(/asset/image/background_header.png);
-  background-size: cover;
-  color: white;
-  padding: 30px;
-  font-size: 38px;
+.page-title {
+    color: #ffffff;
+}
+
+.home-section {
+    background: linear-gradient(90deg, rgba(17, 55, 44, 0.78), rgba(17, 55, 44, 0.28)), url("/asset/image/eco-friendly transportation.jpg") center/cover;
+}
+
+.about-section {
+    background: linear-gradient(90deg, rgba(18, 48, 56, 0.82), rgba(18, 48, 56, 0.22)), url("/asset/image/eco-friendly transportation.jpg") center/cover;
+}
+
+.personal-section {
+    background: linear-gradient(90deg, rgba(48, 60, 35, 0.82), rgba(48, 60, 35, 0.2)), url("/asset/image/eco-friendly transportation.jpg") center/cover;
+}
+
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+
+/*For Home Page*/
+.feature-card, .goals > article {
+    background: #ffffff;
+}
+
+/*Image for diff way to travel*/
+.feature-card > img {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.second-section, .challenges {
+    background: #e5eddd;
+}
+
+
+.last-section {
+    background-color: white;
+} 
+
+
+/*For Personal Action*/
+.goals > span {
+    color: #1f6b4e;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.experience {
+    background-color: #F7F8F2;
+}
+
+.list {
+    list-style: none;
+}
+
+.list > li {
+    background: #f6f7f2;
+}
+
+/*For About Me*/
+.avatar {
+    background: #ffffff;
+}
+
+.avatar > img {
+    height: 70%;
+    width: 320px;
+    object-fit: cover;
+}
+
+
+footer {
+    background-color: #244533;
+    color: white;
+    font-size: 18px;
 }

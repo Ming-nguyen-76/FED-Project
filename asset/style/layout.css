@@ -1,118 +1,175 @@
-/* For Home Page */
-.layout-content {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
-  align-items: center;
-  margin: 0 20px;
+/*Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.first-sub-header, .sub-header {
-  font-size: clamp(24px, 3vw, 32px);
-  margin-left: 20px;
-  margin-bottom: 14px;
-  color: #163825;
+img {
+    display: block;
+    width: 100%;
+}   
+
+
+body {
+    background-position: center;
+    line-height: 1.6;
 }
 
-.first-sub-header {
-  margin-top: 56px;
-}
-
-.sub-header {
-  margin-top: 42px;
-}
-
-.content, ol {
-  grid-column: 1 / 8;
-  border-radius: 18px;
-  background: #9bd0ef;
-  padding: 24px;
-  width: auto;
-}
-
-.content {
-  font-size: 23px;
-}
-
-ol {
-  padding-left: 32px;
-}
-
-ol > li {
-  padding: 8px;
-  font-size: 23px;
-}
-
-.representation {
-  grid-column: 8 / 13;
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 18px;
-  justify-self: center;
-}
-
-#last-section {
-  padding-bottom: 24px;
-}
-
-/* For About Me */
-.about-content {
-  display: grid;
-  grid-column: 3/11;
-  border-radius: 24px;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 30px;
-  font-size: 25px;
-  margin: 60px 0;
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 7%;
 }
 
 
-/* For Personal Action */
-.personal-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
-  margin: 40px 20px;
-  align-items: start;
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.personal-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.navbar > a {
+    padding: 8px 14px;
+    font-weight: 700;
+    border-radius: 999px;
 }
 
-.personal-representation {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 18px;
-  margin-bottom: 18px;
+
+.page-title {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 80px 7%;
 }
 
-.personal-header {
-  min-height: 42px;
-  margin-bottom: 12px;
-  font-size: 28px;
+
+
+h1 {
+    margin-bottom: 18px;
+    line-height: 1;
+}
+
+h2 {
+    margin-bottom: 14px;
+    line-height: 1.1;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+/*For Home Page*/
+.feature-card, .goals > article {
+    border: 1px solid #d9dfd2;
+    border-radius: 10px;
+}
+
+.first-section, .second-section, .last-section, .challenges, .avatar, .experience {
+    padding: 70px 7%;
+}
+
+.section-title {
+    max-width: 720px;
+    margin-bottom: 28px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+.feature-card > h3, .feature-card > p, .goals > article {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.feature-card > h3 {
+    padding-top: 22px;
+}
+
+.feature-card p {
+    padding-bottom: 22px;
+}
+
+.second-section, .challenges {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 34px;
+    align-items: center;
+}
+
+.representation > img {
+    display: grid;
+    gap: 12px;
+    border-radius: 10px;
+}
+
+.last-section, .experience {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 34px;
+    align-items: center;
+}
+
+
+/*For Personal Action*/
+.goals > article {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.goals {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.goals > span {
+    padding-bottom: 50px;
+}
+
+.list {
+    display: grid;
+    gap: 12px;
+}
+
+.list > li {
+    padding: 12px 14px;
+    border-left: 4px solid #d49b31;
+}
+
+.challenges > img {
+    display: grid;
+    gap: 12px;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+
+/*For About Me*/
+.avatar {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 34px;
+    align-items: center;
+}
+
+.avatar > img {
+    border-radius: 70%;
 }
 
 .main-info {
-  border-radius: 20px;
-  background-color: #9bd0ef;
-  padding: 22px;
-  font-size: 22px;
+    border-radius: 10px;
+    border: 10px solid #8A9A5B;
+    padding: 22px;
 }
 
 
-ul {
-  border-radius: 20px;
-  background-color: #9bd0ef;
-  padding: 22px;
-  font-size: 20px;
-  padding-left: 40px;
-}
-
-li {
-  margin-bottom: 12px;
+footer {
+    text-align: center;
+    padding: 18px;
 }
